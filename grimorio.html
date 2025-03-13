@@ -36,6 +36,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            position: relative; /* Necessário para o posicionamento absoluto do gif */
         }
 
         .container {
@@ -57,6 +58,12 @@
         h1, h3 {
             text-align: center;
             margin-bottom: 10px; /* Margem abaixo dos títulos */
+        }
+        
+        h2 {
+            text-align:right;
+            margin-bottom: 170px;
+            color:red
         }
 
         .images {
@@ -83,12 +90,39 @@
         img:hover {
             transform: scale(1.05); /* Efeito de zoom nas imagens ao passar o mouse */
         }
+
+        img.gif {
+            width: 100%; /* Define o tamanho como 50% da largura do container */
+            height: auto; /* Mantém a proporção original do GIF */
+            position:relative;
+            right: 20px;
+        }
+
+        .top-left-gif {
+            position: absolute;
+            top: 10px; /* Distância do topo */
+            left: 10px; /* Distância da esquerda */
+            width: 300px; /* Tamanho do GIF */
+            height: auto; /* Mantém a proporção */
+        }
+        .top-right-gif{
+            position:absolute;
+            top: 10px;
+            right: 10px;
+            width: 300px;
+            height: auto;      
+        
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container">
+        <!-- GIF no canto superior esquerdo -->
+        <img class="top-left-gif" src="https://static.wikia.nocookie.net/halls-of-torment/images/5/5b/Scriptor_Sprite.gif/revision/latest/scale-to-width/360?cb=20240526150636" alt="GIF no canto superior esquerdo">
+        <h2>    BUSQUE CONHECIMENTO! </h1>
+        <img class="top-right-gif" src="https://i.pinimg.com/originals/17/a9/00/17a900d73f0a8091413037a6f8ffb5f1.gif" alt="GIF no canto superior direito"
         <h1> Grimório Mágico</h1> <!-- Título principal -->
         <h3> Aventura Fantástica</h3> <!-- Subtítulo -->
 
@@ -110,9 +144,11 @@
                 <h3> Boga rosa</h3>
                 <img src="https://img.ifunny.co/images/85e855710a68193dc4e396fad3f6031e9ee0ba45df52f602534b261ef224817c_1.jpg" alt="Duende do Clash Royale">
             </div>
-
             <div>
-                <h3> Luranha</h3>
+                <img class="gif" src="https://media2.giphy.com/media/KHKspeBKSnA7QwkcHa/200w.gif?cid=6c09b95203oh61uw1g4utf3dzsnn4bq7zytfizz712brfrlv&ep=v1_stickers_search&rid=200w.gif&ct=s" alt="Aventura GIF">
+            </div>
+            <div>
+                <h3> Mosquito Transmissor da Mentira</h3>
                 <img src="https://i.ibb.co/KHfT4X2/Media.jpg" alt="Duende do Clash Royale">
             </div>
         </div>
