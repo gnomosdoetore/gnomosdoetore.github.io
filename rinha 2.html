@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html> 
+
+<head> 
+    <meta charset="utf-8"> 
+   <style> 
+
+   @keyframes backgroundColorChange {
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: blue;
+            }
+            50% {
+                background-color: green;
+            }
+            75% {
+                background-color: purple;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+
+	.main{  
+      animation: backgroundColorChange 10s infinite; /* Animação de 10s, contínua */
+	   margin:0; 
+	   padding:0; 
+      color: white;
+	   box-sizing: border-box; 
+	} 
+
+   .form{  
+      margin: auto;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
+      background-color: red;
+	} 
+
+   table, td, th {	 
+      border: 1px solid #000000;
+      padding: 10px;
+      text-align: center;
+      margin: auto;
+      background-color: wheat;
+   }
+
+   th {
+      border: 2px solid black; 
+      background-color: lightgray; 
+   }
+   
+   .imagem{
+      display: block;
+      margin: 20px auto;
+      width: 25%;
+   }
+
+   .titulo{
+    padding: 10px;
+      text-align: center;
+      margin: auto;
+      /* background-color: wheat */
+   }
+
+   .imagem-topo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px; /* Diminuído para 50% do valor original */
+}
+
+.imagem-topo-esquerda {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 175px; /* Diminuído para 50% do valor original */
+
+    }
+    .caixa-mensagem {
+            position: absolute;
+            top: 400px; 
+            left: 10px;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #0011ff;
+        }
+
+   </style> 
+
+   <title>RINHAS DE GALO</title> 
+
+</head> 
+<body class="main">
+    <img class="imagem-topo-esquerda" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/90e3b432-b619-45c6-ba04-e426c766914b/d2aq83s-ccf4e786-82bb-436a-8b53-59ebf3ac44a4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkwZTNiNDMyLWI2MTktNDVjNi1iYTA0LWU0MjZjNzY2OTE0YlwvZDJhcTgzcy1jY2Y0ZTc4Ni04MmJiLTQzNmEtOGI1My01OWViZjNhYzQ0YTQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FUbylNLzuzhuAoudhuacJ_edyBbFAQfXA2qiW14a7aw" alt="Imagem de galo">
+    <div class="caixa-mensagem">
+        <form action="" method="POST" enctype="multipart/form-data">
+            <label for="mensagem">Sua Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea><br>
+            <label for="arquivo">Anexar arquivo:</label><br>
+            <input type="file" id="arquivo" name="arquivo"><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <img class="imagem-topo" src="https://ih1.redbubble.net/image.4834934157.9883/st,small,507x507-pad,600x600,f8f8f8.jpg">
+    <h1 class="titulo"> Inscreva seu galo</h1>
+   <div class="form"> 
+	<form action="" method="POST" enctype="application/x-www-form-urlencoded">
+      <label for="Nome">Nome do galo </label>
+      <input type="text" id="nome" name="nome">
+ 
+      <label for="mail">Email do galo </label>
+      <input type="email" id="mail" name="mail">
+      <br>
+
+      
+      <label for="Card">Numero do cartão(o seu)</label>
+      <input type="number" id="card" name="card">  
+
+
+      <h3> Tipo de galo</h3>     
+      <input type="radio" id="veloz" name="galo" value="Veloz">
+      <label for="veloz">Veloz</label><br>
+      <input type="radio" id="estrategista" name="estrategista" value="Estrategista">
+      <label for="estrategista">Estrategista</label><br>
+      <input type="radio" id="parrudo" name="parrudo" value="Parrudo">
+      <label for="parrudo">Parrudo</label>
+      <input type="radio" id="rock" name="rock" value="rock">
+      <label for="rock">Rockeiro</label>
+      <input type="radio" id="ass" name="ass" value="ass">
+      <label for="ass">Asasino </label>
+      
+
+    </br>
+
+    <h3> Genero do galo</h3>     
+    <input type="radio" id="sim" name="sim" value="sim">
+    <label for="sim">Sim</label><br>
+    <input type="radio" id="nao" name="nao" value="nao">
+    <label for="nao">Nao</label><br>
+
+      <br>
+      <input type="submit" value="Enviar"> 
+      
+	</form>
+
+   </div> 
+   <br>
+
+   <!-- form end -->
+    
+   <div>
+   <table>
+        <caption>CAMPEÕES FODA DE RINHA DE GALO</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Top 1</th>
+                <th>Top 2</th>
+                <th>Top 3</th>
+                <th>Top 4</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="5">Senac rinhas de galo - 2025 &copy;</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td rowspan="2"> ></td>
+                <td>Gertudez, A feroz</td>
+                <td>Gil matador</td>
+                <td>Trator</td>
+                <td>Caramuru, a lenda</td>
+            </tr>
+            <tr>
+                <td>MVP</td>
+                <td>MVP</td>
+                <td>MVP</td>
+                <td>MVP</td>
+            </tr>
+        </tbody>
+    </table>
+   </div>
+   <img class="imagem" src="https://th.bing.com/th/id/R.84f5f513612de97ca111f365d52bc69b?rik=hqein9hs%2b7bFMQ&pid=ImgRaw&r=0" >
+   <img class="imagem" src="chicken-8025932_1280.png" >
+</body> 
+</html>

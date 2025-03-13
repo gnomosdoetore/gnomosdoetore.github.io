@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @keyframes backgroundColorChange {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            75% {
+                background-color: purple;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            animation: backgroundColorChange 10s infinite; /* Animação de 10s, contínua */
+            background-color: rgb(0, 0, 0); /* Cor de fundo inicial */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 90%; /* Tamanho da área do conteúdo */
+            height: 90%; /* Tamanho da área do conteúdo */
+            position: relative;
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f23de9ab-bd9f-4ae0-94d0-909e52647b3c/d6kmmck-bb69282e-ebd0-46d4-b385-d0fe400695e3.jpg/v1/fill/w_1024,h_768,q_75,strp/wicca_wallpaper_pentacle1_by_mrstrange75_d6kmmck-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzY4IiwicGF0aCI6IlwvZlwvZjIzZGU5YWItYmQ5Zi00YWUwLTk0ZDAtOTA5ZTUyNjQ3YjNjXC9kNmttbWNrLWJiNjkyODJlLWViZDAtNDZkNC1iMzg1LWQwZmU0MDA2OTVlMy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.DrbbEi_ceY3Ma9vzYk6-Y6r-h8MrheBoG1Z63hMf0qo');
+            background-size: cover;
+            background-position: center;
+            border: 20px solid rgb(255, 0, 0); /* Borda vermelha */
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Organiza os itens em coluna */
+            align-items: center; /* Alinha os itens ao centro */
+            justify-content: center;
+        }
+
+        h1, h3 {
+            text-align: center;
+            margin-bottom: 10px; /* Margem abaixo dos títulos */
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            width: 100%; /* Usa 100% da largura disponível */
+            gap: 10px; /* Espaçamento entre as imagens */
+            flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
+        }
+
+        .images div {
+            text-align: center; /* Alinha o texto e as imagens centralizados */
+            width: 30%; /* Cada imagem ocupa 30% da largura */
+        }
+
+        img {
+            display: block;
+            width: 80%; /* Diminuindo o tamanho das imagens */
+            height: auto;
+            border-radius: 10px; /* Borda arredondada nas imagens */
+            transition: transform 0.3s ease; /* Transição suave para efeitos de hover */
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Efeito de zoom nas imagens ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> Grimório Mágico</h1> <!-- Título principal -->
+        <h3> Aventura Fantástica</h3> <!-- Subtítulo -->
+
+        <!-- Container para as imagens lado a lado -->
+        <div class="images">
+            <div>
+                <h3> Chupa Chupa</h3> <!-- Texto acima da imagem -->
+                <img src="https://th.bing.com/th/id/OIP.HhxBygp6VT4IdhOqrYurKwHaD0?rs=1&pid=ImgDetMain" alt="Imagem Mágica">
+            </div>
+            <div>
+                <h3> Gnomo do Rock</h3>
+                <img src="https://th.bing.com/th/id/OIP.c0TO6ZL99jVNrTfiyrviHQHaIw?rs=1&pid=ImgDetMain" alt="Gnomo do Rock">
+            </div>
+            <div>
+                <h3> Duende do Clash Royale</h3>
+                <img src="https://th.bing.com/th/id/OIP.Cr-vOMEE9Sj2I9ZHBDZg7QAAAA?rs=1&pid=ImgDetMain" alt="Duende do Clash Royale">
+            </div>
+            <div>
+                <h3> Boga rosa</h3>
+                <img src="https://img.ifunny.co/images/85e855710a68193dc4e396fad3f6031e9ee0ba45df52f602534b261ef224817c_1.jpg" alt="Duende do Clash Royale">
+            </div>
+
+            <div>
+                <h3> Luranha</h3>
+                <img src="https://i.ibb.co/KHfT4X2/Media.jpg" alt="Duende do Clash Royale">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

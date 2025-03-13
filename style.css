@@ -1,0 +1,89 @@
+/* Definição da animação para mudança de fundo */
+@keyframes backgroundColorChange {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: purple;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+/* Estilo do quadrado com animação de fundo */
+.quadrado {
+    background-color: red;
+    width: 50vw;
+    height: 50vw;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    display: block;
+    animation: backgroundColorChange 5s infinite; /* Aplica a animação */
+}
+
+nav {
+    background-color: gray;
+    color: beige;
+}
+
+.mobile {
+    display: block; /* Exibe o menu por padrão em telas grandes */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: gray;
+    z-index: 1;
+    width: 100%;
+}
+
+/* Esconde o menu por padrão em telas pequenas */
+#check:checked ~ .mobile {
+    display: block;
+}
+
+/* Estilo do ícone do hambúrguer */
+.checkb {
+    font-size: 3rem;
+    color: #ff0000;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Estilos para o menu no mobile */
+@media screen and (max-width: 992px) {
+    /* Ícone do hambúrguer só será exibido no mobile */
+    .checkb {
+        display: block;
+    }
+
+    /* O menu será escondido até que o checkbox seja marcado */
+    .mobile {
+        display: none; /* Oculta o menu por padrão em telas pequenas */
+        top: 50px; /* Ajuste da posição do menu */
+        left: 0;
+        width: 100%;
+        background-color: gray;
+    }
+
+    .mobile a {
+        color: #fff;
+        font-size: 2rem;
+        padding: 1rem;
+        text-decoration: none;
+        display: block;
+    }
+
+    .mobile a:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
