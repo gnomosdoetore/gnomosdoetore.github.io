@@ -33,6 +33,15 @@
             background-color: lightgray;
         }
     </style>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let audio = document.getElementById("audio");
+        audio.muted = false; // Remove a restrição de mute após carregamento
+        audio.play().catch(error => {
+            console.log("A reprodução automática foi bloqueada:", error);
+        });
+    });
+    </script>
 </head>
 <body>
     <h1>Responsivo</h1>
@@ -73,5 +82,10 @@
             <a href="rinha 2.html">Rinha de galo</a>
         </div>
     </nav>
+
+    <audio controls autoplay>
+        <source src="videoplayback.m4a" type="audio/ogg">
+      Your browser does not support the audio element.
+      </audio>
 </body>
 </html>
